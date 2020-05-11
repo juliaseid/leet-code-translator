@@ -27,6 +27,13 @@ namespace Translator.TestTools
       LeetSpeakTranslator testThree = new LeetSpeakTranslator();
       Assert.AreEqual("1", testThree.Translate("I"));
     }
+
+    [TestMethod]
+    public void Translator_LetterTReplacedWith_7()
+    {
+      LeetSpeakTranslator testFour = new LeetSpeakTranslator();
+      Assert.AreEqual("7", testFour.Translate("t"));
+    }
   }
 }
 
