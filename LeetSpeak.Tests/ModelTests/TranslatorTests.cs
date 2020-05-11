@@ -13,6 +13,13 @@ namespace Translator.TestTools
       LeetSpeakTranslator testOne = new LeetSpeakTranslator();
       Assert.AreEqual("3", testOne.Translate("e"));
     }
+  
+    [TestMethod]
+    public void Translator_LetterOReplacedWith_0()
+    {
+      LeetSpeakTranslator testTwo = new LeetSpeakTranslator();
+      Assert.AreEqual("0", testTwo.Translate("o"));
+    }
   }
 }
 
