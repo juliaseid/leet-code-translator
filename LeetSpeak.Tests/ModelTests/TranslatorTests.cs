@@ -38,7 +38,13 @@ namespace Translator.TestTools
     public void Translator_LetterSReplacedWith_Z()
     {
       LeetSpeakTranslator testFive = new LeetSpeakTranslator();
-      Assert.AreEqual("snak3z", testFive.Translate("snakes"));
+      Assert.AreEqual("sn4k3z", testFive.Translate("snakes"));
+    }
+    [TestMethod]
+    public void Translator_LetterAReplacedWith_4()
+    {
+      LeetSpeakTranslator testSix = new LeetSpeakTranslator();
+      Assert.AreEqual("4", testSix.Translate("a"));
     }
 
   }
